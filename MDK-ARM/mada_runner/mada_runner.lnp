@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"mada_runner\startup_stm32f103x6.o"
+"mada_runner\main.o"
+"mada_runner\gpio.o"
+"mada_runner\tim.o"
+"mada_runner\stm32f1xx_it.o"
+"mada_runner\stm32f1xx_hal_msp.o"
+"mada_runner\stm32f1xx_hal_gpio_ex.o"
+"mada_runner\stm32f1xx_hal_tim.o"
+"mada_runner\stm32f1xx_hal_tim_ex.o"
+"mada_runner\stm32f1xx_hal.o"
+"mada_runner\stm32f1xx_hal_rcc.o"
+"mada_runner\stm32f1xx_hal_rcc_ex.o"
+"mada_runner\stm32f1xx_hal_gpio.o"
+"mada_runner\stm32f1xx_hal_dma.o"
+"mada_runner\stm32f1xx_hal_cortex.o"
+"mada_runner\stm32f1xx_hal_pwr.o"
+"mada_runner\stm32f1xx_hal_flash.o"
+"mada_runner\stm32f1xx_hal_flash_ex.o"
+"mada_runner\stm32f1xx_hal_exti.o"
+"mada_runner\system_stm32f1xx.o"
+--strict --scatter "mada_runner\mada_runner.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mada_runner.map" -o mada_runner\mada_runner.axf
